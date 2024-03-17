@@ -1,0 +1,8 @@
+app_background_default = #ffffff
+app_text_default = #000000
+
+app_button_default = #004AAD
+app_button_Click_imp = #0E194D
+
+app_bg_block = #EDDACF
+app_bg_block_home = #FAF5F3

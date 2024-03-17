@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Main";
+        font-weight: 1 1000;
+        src: url("/public/assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")format('truetype');
+    }
+    @font-face {
+        font-family: "MainItalic";
+        font-weight: 1 1000;
+        font-style: italic;
+        src: url("/public/assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf")format('truetype');
+    }  
+}
+
+/* Your CSS */
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    /* You can adjust this width as needed */
+    scrollbar-width: none;
+    /* For Firefox */
+    scrollbar-color: transparent transparent;
+
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Transparent background */
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    /* Transparent scrollbar thumb */
+
+}
+
+/* Custom scrollbar for dark mode */
+body ::-webkit-scrollbar-thumb {
+    background: transparent;
+
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+/* Your CSS */
+.scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    width: 0;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Optional: Style for the scroll buttons */
+.scroll-left,
+.scroll-right {
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+/* Add this CSS to your stylesheet or in your <style> tag */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-clear-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
